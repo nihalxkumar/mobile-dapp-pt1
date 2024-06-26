@@ -16,7 +16,10 @@ data class Connected(
     val authToken: String
 ): UserWalletDetails()
 
-
+/**
+ * Saves & clears an MWA connection to an on-device wallet, with convenience value providing
+ * connection status
+ */
 class WalletConnectionUseCase @Inject constructor(
     private val dataStoreRepository: PrefsDataStoreRepository,
 ) {
